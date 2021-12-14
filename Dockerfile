@@ -1,5 +1,5 @@
-FROM ubuntu:16.04
-MAINTAINER Arnaud Mondit <github.com/amondit>
+FROM arm32v7/debian:stretch-slim
+MAINTAINER Hoang Bui <bmhoang@outlook.com>
 RUN apt-get update \
     && apt-get -y install sslh \
     && rm -rf /var/lib/apt/lists/*
